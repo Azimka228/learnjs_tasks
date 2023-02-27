@@ -5,7 +5,7 @@
 
 
 //answer
-function ucFirst (str) {
+function ucFirst (str:string) {
 
 	if (str) {
 		let newStr = str[0].toUpperCase() + str.slice(1)
