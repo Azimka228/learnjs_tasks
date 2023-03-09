@@ -23,10 +23,10 @@ function getAverageAge(users) {
 	return sumAge / users.length
 }
 
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 29 };
+let vasya1 = { name: "Вася", age: 25 };
+let petya1 = { name: "Петя", age: 30 };
+let masha1 = { name: "Маша", age: 29 };
 
-let arr = [ vasya, petya, masha ];
+let arr1 = [ vasya1, petya1, masha1 ];
 
-alert( getAverageAge(arr) );
+alert( getAverageAge(arr1) );

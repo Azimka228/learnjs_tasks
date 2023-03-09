@@ -26,14 +26,19 @@
 // Итак, на самом деле вам нужно трансформировать один массив объектов в другой. Попробуйте использовать =>. Это небольшая уловка.
 
 //answer
+type UserType = {
+	name: string
+	surname:string
+	id:number
+}
 
-let vasya = {name: "Вася", surname: "Пупкин", id: 1};
-let petya = {name: "Петя", surname: "Иванов", id: 2};
-let masha = {name: "Маша", surname: "Петрова", id: 3};
+const vasya2 = {name: "Вася", surname: "Пупкин", id: 1};
+const petya2 = {name: "Петя", surname: "Иванов", id: 2};
+const masha2 = {name: "Маша", surname: "Петрова", id: 3};
 
-let users = [vasya, petya, masha];
+const users2 = [vasya2, petya2, masha2];
 
-let usersMapped = users.map(user => {
+let usersMapped = users2.map((user:UserType) => {
 	let {name, surname, id} = user
 	return {
 		fullName: `${name} ${surname}`,

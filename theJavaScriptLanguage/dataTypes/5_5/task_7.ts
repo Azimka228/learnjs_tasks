@@ -15,12 +15,12 @@
 // 	alert( names );
 
 //answer
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 28 };
+let vasya4 = { name: "Вася", age: 25 };
+let petya4 = { name: "Петя", age: 30 };
+let masha4 = { name: "Маша", age: 28 };
 
-let users = [ vasya, petya, masha ];
+let users4 = [ vasya4, petya4, masha4 ];
 
-let names = users.map(item => item.name);
+let names = users4.map(item => item.name);
 
 alert( names );

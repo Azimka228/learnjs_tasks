@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="carousel" class="carousel">
+  <button class="arrow prev">⇦</button>
+  <div class="gallery">
+    <ul>
+      <li><img src="https://ru.js.cx/carousel/1.png"></li>
+      <li><img src="https://ru.js.cx/carousel/2.png"></li>
+      <li><img src="https://ru.js.cx/carousel/3.png"></li>
+      <li><img src="https://ru.js.cx/carousel/4.png"></li>
+      <li><img src="https://ru.js.cx/carousel/5.png"></li>
+      <li><img src="https://ru.js.cx/carousel/6.png"></li>
+      <li><img src="https://ru.js.cx/carousel/7.png"></li>
+      <li><img src="https://ru.js.cx/carousel/8.png"></li>
+      <li><img src="https://ru.js.cx/carousel/9.png"></li>
+      <li><img src="https://ru.js.cx/carousel/10.png"></li>
+    </ul>
+  </div>
+  <button class="arrow next">⇨</button>
+</div>
+
+<script>
+  let width = 130;
+  let countImages = 3;
+
+  let list = carousel.querySelector('ul');
+  let AllList = carousel.querySelectorAll('li');
+
+  let position = 0;
+
+  carousel.querySelector('.prev').onclick = function() {
+    position += width * countImages;
+    position = Math.min(position, 0)
+    list.style.marginLeft = position + 'px';
+  };
+
+  carousel.querySelector('.next').onclick = function() {
+    position -= width * countImages;
+    position = Math.max(position, -width * (AllList.length - countImages));
+    list.style.marginLeft = position + 'px';
+  };
+</script>
+
+</body>
+</html>
