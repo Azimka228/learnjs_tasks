@@ -7,7 +7,7 @@
 // 	Используйте решение предыдущего задания для начала. Чтобы проверить решение в условиях с прокруткой, добавьте стиль элементу <body style="height: 2000px">.
 
 //answer
-function getCoords(elem) {
+function getCoords3(elem) {
 	let box = elem.getBoundingClientRect();
 
 	return {
@@ -16,9 +16,9 @@ function getCoords(elem) {
 	};
 }
 
-function positionAt(anchor, position, elem) {
+function positionAt3(anchor, position, elem) {
 
-	let anchorCoords = getCoords(anchor);
+	let anchorCoords = getCoords3(anchor);
 
 	switch (position) {
 		case "top":
@@ -37,7 +37,7 @@ function positionAt(anchor, position, elem) {
 
 }
 
-function showNote(anchor, position, html) {
+function showNote3(anchor, position, html) {
 
 	let note = document.createElement('div');
 	note.className = "note";
